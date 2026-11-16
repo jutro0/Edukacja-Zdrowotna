@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telefon pod kontrolą – jak uniknąć jego nadużywania w wieku 13–16 lat?</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
+
+  <!-- Nawigacja -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/80 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 font-bold text-lg tracking-tight text-indigo-600 dark:text-indigo-400">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-indigo-600 text-white text-sm font-extrabold">13–16</span>
+        <span>Telefon pod kontrolą</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#problemy" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Zagrożenia</a>
+        <a href="#nawyki" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">5 nawyków</a>
+        <a href="#czy-wrog" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Technologia z głową</a>
+        <a href="#podsumowanie" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Podsumowanie</a>
+      </nav>
+
+      <button id="themeToggle" type="button" aria-label="Przełącz tryb nocny" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+        <span id="themeIcon">🌙</span>
+        <span id="themeLabel">Tryb nocny</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sekcja powitalna (Hero) -->
+  <section class="relative overflow-hidden py-16 sm:py-24 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300 mb-6">
+        Poradnik cyfrowej równowagi
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-slate-900 dark:text-white mb-6">
+        Telefon pod kontrolą – jak uniknąć jego nadużywania w wieku 13–16 lat?
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto mb-10">
+        Smartfon towarzyszy nam niemal wszędzie. Korzystamy z niego podczas spotkań ze znajomymi, w drodze do szkoły a nawet przed snem. Dla osób w wieku 13–16 lat telefon jest często głównym źródłem rozrywki i komunikacji. Problem pojawia się wtedy gdy zaczyna zajmować zbyt dużą część naszego życia.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#nawyki" class="px-6 py-3 rounded-xl font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-600/20 transition">
+          Poznaj 5 zdrowych nawyków
+        </a>
+        <a href="#problemy" class="px-6 py-3 rounded-xl font-semibold bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition">
+          Dlaczego to problem?
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 space-y-20 pb-24">
+
+    <!-- Sekcja 1: Dlaczego nadmierne korzystanie z telefonu jest problemem? -->
+    <section id="problemy" class="scroll-mt-24">
+      <div class="mb-10">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-3">
+          Dlaczego nadmierne korzystanie z telefonu jest problemem?
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg">
+          Wielogodzinne korzystanie ze smartfona może negatywnie wpływać na codzienne funkcjonowanie. Do najczęstszych problemów należą:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Karta 1 -->
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/70 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl mb-4">
+            🎯
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900 dark:text-white">Problemy z koncentracją</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Częste sprawdzanie powiadomień utrudnia skupienie się na nauce i innych zadaniach.
+          </p>
+        </article>
+
+        <!-- Karta 2 -->
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl mb-4">
+            😴
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900 dark:text-white">Gorsza jakość snu</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Korzystanie z telefonu tuż przed snem może utrudniać zasypianie.
+          </p>
+        </article>
+
+        <!-- Karta 3 -->
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/70 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-4">
+            🗣️
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900 dark:text-white">Mniej kontaktów w rzeczywistości</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Komunikacja internetowa może zastępować bezpośrednie spotkania.
+          </p>
+        </article>
+
+        <!-- Karta 4 -->
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-xl bg-rose-100 dark:bg-rose-950/70 text-rose-600 dark:text-rose-400 flex items-center justify-center text-xl mb-4">
+            📱
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900 dark:text-white">Presja mediów społecznościowych</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Porównywanie swojego życia z wyidealizowanymi zdjęciami innych osób może negatywnie wpływać na samoocenę.
+          </p>
+        </article>
+
+        <!-- Karta 5 -->
+        <article class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition md:col-span-2 lg:col-span-2">
+          <div class="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-950/70 text-sky-600 dark:text-sky-400 flex items-center justify-center text-xl mb-4">
+            ⚽
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-slate-900 dark:text-white">Brak czasu na zainteresowania</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Telefon może zabierać czas przeznaczony na sport muzykę czy rozwijanie pasji.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sekcja 2: Jak zapobiegać nadużywaniu telefonu? -->
+    <section id="nawyki" class="scroll-mt-24">
+      <div class="bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-2">
+              Jak zapobiegać nadużywaniu telefonu?
+            </h2>
+            <p class="text-slate-600 dark:text-slate-300">
+              Nie trzeba całkowicie rezygnować ze smartfona. Wystarczy wprowadzić kilka zdrowych nawyków:
+            </p>
+          </div>
+          <div class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 px-4 py-2 rounded-xl shrink-0">
+            Wdrożono: <span id="habitCount">0</span> / 5
+          </div>
+        </div>
+
+        <!-- Pasek postępu -->
+        <div class="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden mb-8">
+          <div id="habitProgress" class="h-full bg-indigo-600 transition-all duration-300 rounded-full" style="width: 0%"></div>
+        </div>
+
+        <!-- Lista nawyków (interaktywna) -->
+        <div class="space-y-3" id="habitList">
+          <label class="habit-item flex items-start gap-4 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 cursor-pointer transition select-none">
+            <input type="checkbox" class="mt-1 w-5 h-5 rounded text-indigo-600 focus:ring-indigo-500 cursor-pointer" />
+            <div>
+              <span class="font-bold text-slate-900 dark:text-white">1. Ustal limity</span>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-0.5">
+                Kontroluj ile czasu spędzasz w poszczególnych aplikacjach.
+              </p>
+            </div>
+          </label>
+
+          <label class="habit-item flex items-start gap-4 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 cursor-pointer transition select-none">
+            <input type="checkbox" class="mt-1 w-5 h-5 rounded text-indigo-600 focus:ring-indigo-500 cursor-pointer" />
+            <div>
+              <span class="font-bold text-slate-900 dark:text-white">2. Wyłącz zbędne powiadomienia</span>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-0.5">
+                Dzięki temu telefon nie będzie ciągle odciągał Twojej uwagi.
+              </p>
+            </div>
+          </label>
+
+          <label class="habit-item flex items-start gap-4 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 cursor-pointer transition select-none">
+            <input type="checkbox" class="mt-1 w-5 h-5 rounded text-indigo-600 focus:ring-indigo-500 cursor-pointer" />
+            <div>
+              <span class="font-bold text-slate-900 dark:text-white">3. Nie korzystaj z telefonu przed snem</span>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-0.5">
+                Postaraj się odłożyć go przynajmniej na jakiś czas przed pójściem spać.
+              </p>
+            </div>
+          </label>
+
+          <label class="habit-item flex items-start gap-4 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 cursor-pointer transition select-none">
+            <input type="checkbox" class="mt-1 w-5 h-5 rounded text-indigo-600 focus:ring-indigo-500 cursor-pointer" />
+            <div>
+              <span class="font-bold text-slate-900 dark:text-white">4. Znajdź alternatywę</span>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-0.5">
+                Poświęć więcej czasu na hobby sport lub spotkania ze znajomymi.
+              </p>
+            </div>
+          </label>
+
+          <label class="habit-item flex items-start gap-4 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 cursor-pointer transition select-none">
+            <input type="checkbox" class="mt-1 w-5 h-5 rounded text-indigo-600 focus:ring-indigo-500 cursor-pointer" />
+            <div>
+              <span class="font-bold text-slate-900 dark:text-white">5. Rób przerwy</span>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-0.5">
+                Nie musisz odpowiadać na każdą wiadomość natychmiast ani sprawdzać każdej nowej informacji.
+              </p>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 3: Czy telefon naprawdę jest naszym wrogiem? -->
+    <section id="czy-wrog" class="scroll-mt-24">
+      <div class="rounded-3xl bg-gradient-to-br from-indigo-600 to-violet-700 text-white p-8 sm:p-12 shadow-lg">
+        <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-xs font-semibold uppercase tracking-wider mb-4">
+          Świadome korzystanie
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4">
+          Czy telefon naprawdę jest naszym wrogiem?
+        </h2>
+        <p class="text-indigo-50 text-base sm:text-lg leading-relaxed max-w-3xl">
+          Oczywiście że nie! Smartfony ułatwiają naukę, komunikację i dostęp do informacji. Mogą być również świetnym narzędziem do rozwijania zainteresowań. Kluczem jest świadome korzystanie z technologii a nie całkowite jej unikanie.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sekcja 4: Podsumowanie -->
+    <section id="podsumowanie" class="scroll-mt-24">
+      <div class="border-l-4 border-indigo-600 pl-6 sm:pl-8 py-2">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+          Podsumowanie
+        </h2>
+        <p class="text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
+          Telefon powinien być narzędziem, które ułatwia nam życie a nie czymś, co je kontroluje. Warto nauczyć się korzystać z niego z umiarem zanim stanie się głównym sposobem spędzania wolnego czasu. Pamiętaj – poza ekranem również dzieje się wiele ciekawych rzeczy.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Stopka -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 px-4 text-center text-sm text-slate-500 dark:text-slate-400">
+    Telefon pod kontrolą • Poradnik dla młodzieży w wieku 13–16 lat
+  </footer>
+
+  <script>
+    // Obsługa trybu nocnego
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+
+    function updateThemeUI(isDark) {
+      themeIcon.textContent = isDark ? '☀️' : '🌙';
+      themeLabel.textContent = isDark ? 'Tryb dzienny' : 'Tryb nocny';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = html.classList.toggle('dark');
+      updateThemeUI(isDark);
+    });
+
+    // Obsługa interaktywnej listy nawyków
+    const checkboxes = document.querySelectorAll('#habitList input[type="checkbox"]');
+    const habitCount = document.getElementById('habitCount');
+    const habitProgress = document.getElementById('habitProgress');
+
+    function updateProgress() {
+      const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
+      const total = checkboxes.length;
+      habitCount.textContent = checked;
+      habitProgress.style.width = `${(checked / total) * 100}%`;
+
+      checkboxes.forEach(cb => {
+        const card = cb.closest('.habit-item');
+        if (cb.checked) {
+          card.classList.add('bg-indigo-50/70', 'dark:bg-indigo-950/30', 'border-indigo-400', 'dark:border-indigo-600');
+        } else {
+          card.classList.remove('bg-indigo-50/70', 'dark:bg-indigo-950/30', 'border-indigo-400', 'dark:border-indigo-600');
+        }
+      });
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+  </script>
+</body>
+</html>
